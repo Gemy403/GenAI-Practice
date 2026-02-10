@@ -20,4 +20,4 @@ user2 = User(name="koko",age=25)
 session.add_all([user1,user2])
 
 # save changes 
-session.commit()
+# session.commit()
