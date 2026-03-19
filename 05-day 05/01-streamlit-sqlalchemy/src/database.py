@@ -35,3 +35,9 @@ Session = sessionmaker(bind=engine)
 def get_session():
     return Session()
 
+
+
+def create_task(session,title,description):
+    new_task = Task(title=title,description=description)
+    session.add(new_task)
+    session.commit()
